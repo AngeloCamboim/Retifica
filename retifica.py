@@ -18,8 +18,10 @@ elif (resultado > primeira_medida and resultado < segunda_medida):
     print("A folga é de {:.3f}, retificar para {:.3f}".format(resultado,segunda_medida))
 elif (resultado > segunda_medida and resultado < terceira_medida):
     print("A folga é de {:.3f}, retificar para {:.3f}".format(resultado,terceira_medida))
+elif (resultado > terceira_medida and resultado < quarta_medida):
+    print("A folga é de {:.3f}, retificar para {:.3f}".format(resultado, quarta_medida))
 else:
-    print("A folga é de {:.3f}, retificar para {:.3f}".format(resultado,quarta_medida))
+    print("Substituir o virabrequim")
 
 moente = float(input("Medida do moente STD: "))
 moenteMedido = float(input("Medida encontrada no moente: "))
@@ -32,10 +34,12 @@ elif (resultado2 > primeira_medida and resultado < segunda_medida):
     print("A folga é de {:.3f}, retificar para {:.3f}".format(resultado2,segunda_medida))
 elif (resultado2 > segunda_medida and resultado2 < terceira_medida):
     print("A folga é de {:.3f}, retificar para {:.3f}".format(resultado2,terceira_medida))
+elif (resultado2 > terceira_medida and resultado2 < quarta_medida):
+    print("A folga é de {:.3f}, retificar para {:.3f} \n".format(resultado2, quarta_medida))
 else:
-    print("A folga é de {:.3f}, retificar para {:.3f} \n".format(resultado2,quarta_medida))
+    print("Substitua o virabrequim")
 
-print("--- Agora, serão avaliados os cilindros. Informe a pior medida encontrada ---")
+print("--- Agora, serão avaliados os cilindros. ---")
 cilindro = float(input("Medida do cilindro STD: "))
 
 cilindroMedido = float(input("Informe a medida do cilindro mais gasto: "))
@@ -48,15 +52,10 @@ elif (resultado3 > primeira_medida and resultado3 < segunda_medida):
     print("O desgaste foi de {:.3f}, retificar para {:.3f}".format(resultado3,segunda_medida))
 elif (resultado3 > segunda_medida and resultado3 < terceira_medida):
     print("O desgaste foi de {:.3f}, retificar para {:.3f}".format(resultado3,terceira_medida))
-else:
+elif (resultado3 > terceira_medida and resultado3 < quarta_medida):
     print("O desgaste foi de {:.3f}, retificar para {:.3f} \n".format(resultado3,quarta_medida))
-
-
+else:
+    print("Substitua o bloco do motor")
 
 print("--- OBRIGADO POR USAR VALHALLA SOFTWARE ---")
-
-
-
 #sys.exit()
-#Adicionar a fala para substituir vira ou bloco
-#Adicionar um relatório completo no final
